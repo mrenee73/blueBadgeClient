@@ -40,7 +40,7 @@ footer p{
 }
 
 ul {
-   list-style-type: none;                        
+  list-style-type: none;                        
 }
 
 /* Sidebar */
@@ -70,6 +70,7 @@ ul {
   text-align: center;
   background-color: #1C4878;
   color: white;
+
 }
 
 .header a {
