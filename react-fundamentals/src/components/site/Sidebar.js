@@ -4,6 +4,7 @@ import {
     Switch
 } from 'react-router-dom';
 import Home from './Home';
+import Resource from ''
 
 const Sidebar = () => {
     return(
