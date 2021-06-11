@@ -39,14 +39,14 @@ footer p{
 }
 
 ul {
-   list-style-type: none;                        
+  list-style-type: none;                        
 }
 
 /* Sidebar */
 
 .sidebar-list-styling{
   padding-left: 50px;
-  padding-top: ;
+  padding-top: 10px;
 }
 
 
