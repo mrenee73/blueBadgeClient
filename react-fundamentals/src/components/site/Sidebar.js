@@ -5,10 +5,8 @@ import {
 } from 'react-router-dom';
 import Home from './Home';
 import signPic from '../../assets/neighborhoodsign.jpg';
+
 import Login from '../Login/Login';
-
-
-
 const Sidebar = () => {
     return(
         <div className= 'sidebar'>
