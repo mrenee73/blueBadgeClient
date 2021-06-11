@@ -46,9 +46,38 @@ ul {
 
 .sidebar-list-styling{
   padding-left: 50px;
-  padding-top: ;
+  padding-top: 15px;
+  width: 20%;
+  background-color: #53565A;
+  color: white;
 }
 
+.sidebar-list a{
+  color: white;
+  padding: 0;
+}
+
+.sidebar-route {
+  flex: 1;
+  padding: '0px';
+}
+
+/* header */
+
+.header {
+  margin-top: 0.5em!important;
+  text-align: center;
+  background-color: #53565A;
+  color: white;
+}
+
+.header a {
+  color: white;
+}
+
+.header p {
+  margin-top: 0.8em!important;
+}
 
 
 
