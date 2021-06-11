@@ -4,14 +4,11 @@ import {
     Switch
 } from 'react-router-dom';
 import Home from './Home';
-<<<<<<< HEAD
 import signPic from '../../assets/neighborhoodsign.jpg';
-=======
 
-import neighborhood from '../'
->>>>>>> c4e3462d94cc7cfff395431fb2b7889915bb275c
 
-import Resource from ''
+
+
 
 
 const Sidebar = () => {
