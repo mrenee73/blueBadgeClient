@@ -18,8 +18,8 @@ const Sidebar = () => {
             <div className='sidebar-route'>
                 <Switch>
                     <Route exact path='/home'><Home /></Route>
-                    <Route exact path='/home'><Home /></Route>
-                    <Route exact path='/functionalcomponent'><Functional Component /></Route>
+                    <Route exact path='/'><Home /></Route>
+                   
                 </Switch>
         </div>
         </div>
