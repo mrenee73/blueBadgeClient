@@ -18,7 +18,7 @@ function App() {
         <Sidebar />
       </Router>
       <Footer />
-      Testing Testing
+     
     </div>
   );
 };

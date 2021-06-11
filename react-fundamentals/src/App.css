@@ -7,12 +7,13 @@ body {
 
 /* footer */
 footer {
-  background-color: #53565A;
+  background-color: #1C4878;
   color: white;
   margin-top: 10px;
 }
 
 footer p{
+  text-align: center;
   margin-top: 0.8em!important;
   margin-left: 1.5em;
 }
@@ -20,7 +21,7 @@ footer p{
 /* main */
 
 .main {
-  background-color: white;
+  background: linear-gradient(to bottom, #014084 0%, #ffffff 100%);
   color: black;
   height: 100%;
   min-height: 100%;
@@ -34,7 +35,7 @@ footer p{
 
 .sidebar {
   display: flex;
-  background-color: #53565a;
+  background-color: #1C4878;
   margin-top: 10px;
 }
 
@@ -48,7 +49,7 @@ ul {
   padding-left: 50px;
   padding-top: 15px;
   width: 20%;
-  background-color: #53565A;
+  background-color: #1C4878;
   color: white;
 }
 
@@ -67,7 +68,7 @@ ul {
 .header {
   margin-top: 0.5em!important;
   text-align: center;
-  background-color: #53565A;
+  background-color: #1C4878;
   color: white;
 }
 

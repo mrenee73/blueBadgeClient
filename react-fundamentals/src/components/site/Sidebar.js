@@ -4,6 +4,7 @@ import {
     Switch
 } from 'react-router-dom';
 import Home from './Home';
+import neighborhood from '../'
 
 const Sidebar = () => {
     return(
