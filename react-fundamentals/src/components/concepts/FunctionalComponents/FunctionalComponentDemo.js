@@ -1,7 +1,9 @@
 const FuntionalComponentDemo = () => {
     return(
         <div>
-            Hello React
+            <div>
+                Hello React 
+            </div>
         </div>
     );
 };
