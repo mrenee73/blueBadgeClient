@@ -4,16 +4,19 @@ import {
     Switch
 } from 'react-router-dom';
 import Home from './Home';
-import neighborhood from '../'
+import signPic from '../../assets/neighborhoodsign.jpg';
 
 const Sidebar = () => {
     return(
         <div className= 'sidebar'>
             <div className='sidebar-list-styling'>
                 <ul className='sidebar-list list-unstyled'>
+                <img id='signPic' src={signPic} alt='neighborhood sign'/>
                     <li><Link to ='/'>Home</Link></li>
-                    <li><Link to ='/'>Home</Link></li>
-                    <li><Link to ='/functionalcomponent'>Functional Component</Link></li>
+                    <li><Link to ='/'>Sign In</Link></li>
+                    <li><Link to ='/'>Register</Link></li>
+                    <li><Link to ='/'>Log Out</Link></li>
+                    <li><Link to ='/functionalcomponent'>Contact Us</Link></li>
                 </ul>
             </div>
             <div className='sidebar-route'>
