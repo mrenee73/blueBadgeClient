@@ -1,16 +1,17 @@
 import React, {useState}from 'react';
+import {Form, FormGroup, Label, Input, Button} from 'reactstrap';
 import './Login.css';
 
 const Login = (props) => {
-    const [username, setUsername] = useState('');
+    const [useremail, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const submitAction = (e) => {
         e.preventDefault();
-        console.log(`Prefetch: ${username},${password}`);
-        fetch ('https://localhost:4000/users/login',{
+        console.log(`Prefetch: ${useremail},${password}`);
+        fetch ('https://localhost:3000/users/login',{
             method:'POST',
-            body: JSON.stringify({user:{username: username, password: password}}),
+            body: JSON.stringify({user:{useremail: useremail, password: password}}),
             headers: new Headers({
                 'Content-Type': 'application/json',
         })
@@ -27,7 +28,18 @@ const Login = (props) => {
 
 return(
     <div>
-        <p>This is place holder</p>
+        <h1>HOA Members Login</h1>
+            <Form onSubmit={submitAction}>
+                <FormGroup>
+                    <Label htmlFor="useremail">Email</Label>
+                    <Input name="useremail" value={useremail} onChange={(e) => setEmail(e.target.value)}/>
+                </FormGroup>
+                <FormGroup>
+                    <Label htmlFor="password">Password</Label>
+                    <Input name="password" value = {password} onChange={(e) => setPassword(e.target.value)}/>
+                </FormGroup>
+                <Button type="submit">Login</Button>
+            </Form>
     </div>
 )
 }
