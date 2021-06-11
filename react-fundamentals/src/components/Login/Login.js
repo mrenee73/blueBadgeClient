@@ -27,7 +27,27 @@ const Login = (props) => {
 
 return(
     <div>
-        <p>This is place holder</p>
+                <form>
+            <h1>{title()}</h1>
+            {signupFields()}
+            <label htmlFor="email">Email:</label>
+            <br/>
+            <input type="text" 
+            id='email' 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)} />
+            <br/>
+            <label htmlFor="password">Password:</label>
+            <br/>
+            <input type="password" 
+            id='password' 
+            value={password} 
+            onChange={(e) => setPassword(e.target.value)} />
+            <br/>
+            <button onClick={loginToggle}>Login/Signup Toggle</button>
+            <br />
+            <button type="submit" onClick={handleSubmit}>Submit User Data</button>
+        </form>
     </div>
 )
 }

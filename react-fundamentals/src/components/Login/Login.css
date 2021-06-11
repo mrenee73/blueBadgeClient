@@ -1,0 +1,31 @@
+input{
+    border: none ;
+    border-radius: 5px;
+    background-color: lightgray;
+    height: 40px;
+    width: 300px;
+    text-indent: 5px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 18px;
+}
+
+input:focus{
+    outline: none;
+    background-color: grey;
+    color: white;
+}
+
+button{
+    margin-top: 1em;
+    border: none;
+    height: 50px;
+    width: 200px;
+    background-color: lightslategray;
+    color: white;
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+}
