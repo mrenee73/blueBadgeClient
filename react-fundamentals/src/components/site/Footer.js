@@ -4,7 +4,7 @@ const Footer = ()=> {
     return(
         <footer>
             <Row>
-                <p>$copy; the A Team 2021</p>
+                <p>&copy; the A Team 2021</p>
             </Row>
         </footer>
     );
