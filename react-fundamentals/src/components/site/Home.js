@@ -1,20 +1,23 @@
 import {Link} from 'react-router-dom';
+import couplePic from '../../assets/coupleWalking.jpg'
 
 const Home = () => {
     return(
         <div className= 'main'>
             <div className= 'mainDiv'>
                 <h1>
-                    Welcome to your HOA
-                </h1>
+                    Welcome to our Community!</h1>
 
-                <ul>
-                    <li> We have tried to collect the very best resources for ths app, and we have cited those <Link to='/resources'>here</Link>.
-                    </li>
-                    <li>
-                        <link to='/resources'>React resources</link>
-                    </li>
-                </ul>
+                <h4>Welcome to our community web site. Once you register you can log in and post about things happening in the neighborhood as well as find out what is happening to your fellow neighbors. </h4>
+
+                <img id="couplePic" 
+                src={couplePic} 
+                alt="Power Button" ></img>
+                 
+
+
+
+                
             </div>
         </div>
     );
