@@ -13,7 +13,7 @@ const createEntry = (props) => {
     const postEntry = e => {
         e.preventDefault();
 
-        let url = 'http://localhost:4000/log/';
+        let url = 'http://localhost:4000/entry/';
 
         fetch(url, {
             method: 'POST',
