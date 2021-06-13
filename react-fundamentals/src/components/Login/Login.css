@@ -1,9 +1,5 @@
-<<<<<<< `HEAD
-
-=======
-
-input{
-    border: none ;
+.input{
+    border: 4px;
     border-radius: 5px;
     background-color: lightgray;
     height: 40px;
@@ -14,13 +10,13 @@ input{
     font-size: 18px;
 }
 
-input:focus{
+.input:focus{
     outline: none;
     background-color: grey;
     color: white;
 }
 
-button{
+.button{
     margin-top: 1em;
     border: none;
     height: 50px;
@@ -30,7 +26,7 @@ button{
     cursor: pointer;
 }
 
-button:focus{
+.button:focus{
     outline: none;
 }
->>>>>>> 0fe580bbc1ecf4c1d7a86368704f4790af0415da
+
