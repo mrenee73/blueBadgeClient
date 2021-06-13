@@ -3,7 +3,7 @@ import {Form, FormGroup, Label, Input, Button} from 'reactstrap';
 import './Login.css';
 
 const Login = (props) => {
-    const [useremail, setEmail] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const submitAction = (e) => {
@@ -11,7 +11,7 @@ const Login = (props) => {
         console.log(`Prefetch: ${useremail},${password}`);
         fetch ('http://localhost:4000/users/login',{
             method:'POST',
-            body: JSON.stringify({user:{useremail: useremail, password: password}}),
+            body: JSON.stringify({user:{email: email, password: password}}),
             headers: new Headers({
                 'Content-Type': 'application/json',
         })
@@ -31,8 +31,8 @@ return(
         <h1>HOA Members Login</h1>
             <Form onSubmit={submitAction}>
                 <FormGroup>
-                    <Label htmlFor="useremail">Email</Label>
-                    <Input name="useremail" value={useremail} onChange={(e) => setEmail(e.target.value)}/>
+                    <Label htmlFor="email">Email</Label>
+                    <Input name="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
                 </FormGroup>
                 <FormGroup>
                     <Label htmlFor="password">Password</Label>
