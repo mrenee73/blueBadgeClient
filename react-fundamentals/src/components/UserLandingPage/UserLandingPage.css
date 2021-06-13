@@ -1,4 +1,5 @@
 h1{
+
     text-align: center;
 }
 form{
@@ -14,6 +15,7 @@ form{
     width: 650px;
     
 }
+
 .registerform{
     
     border: black;
@@ -43,7 +45,6 @@ form{
     background-color: grey;
     color: white;
 }
-
 .button{
     margin-top: 1em;
     border: none;

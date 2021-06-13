@@ -13,7 +13,7 @@ const Home = () => {
                 <img id="couplePic" 
                 src={couplePic} 
                 alt="Power Button" ></img>
-                 
+                
 
 
 
