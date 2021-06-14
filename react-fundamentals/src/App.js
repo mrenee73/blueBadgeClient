@@ -41,10 +41,11 @@ const clearToken = () => {
 
     <div className="App">
       <Header />
+      <div className="Login">
       
         
         {protectedViews()}
-     
+     </div>
       <Footer/>
 
     </div>
