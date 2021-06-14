@@ -5,17 +5,16 @@ import {
     NavItem,
     NavLink
 } from 'reactstrap';
+import signPic from '../../assets/neighborhoodsign.jpg';
 
 const Header = () => {
     return (
         <header>
             <Navbar className = 'header'>
-                <NavbarBrand href= '/'></NavbarBrand>
+                <NavbarBrand href= '/'><h1>Fountain Springs Neighborhood</h1></NavbarBrand>
                 <Nav className= 'ml-auto' navbar>
                     <NavItem>                        
-                            <NavLink href='https://github.com/yourhandle/yourRepoForThisApp'>
-                               
-                            </NavLink>                       
+                    <img id='signPic' src={signPic} alt='neighborhood sign'/>                      
                     </NavItem>
                 </Nav>
             </Navbar>

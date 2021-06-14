@@ -9,7 +9,7 @@ const Login = (props) => {
     const submitAction = (e) => {
         e.preventDefault();
         console.log(`Prefetch: ${email},${password}`);
-        fetch ('https://localhost:3000/users/login',{
+        fetch ('http://localhost:4000/user/login',{
             method:'POST',
             body: JSON.stringify({user:{email: email, password: password}}),
             headers: new Headers({

@@ -2,7 +2,7 @@
        import React, {useState}from 'react';
        import './UserLandingPage.css';
        
-       const Landingpage = (props) => {
+       const LandingPage = (props) => {
 
         return(
             <div>
@@ -14,7 +14,7 @@
        
        
        
-       export default Landingpage
+       export default LandingPage
        
        //    const [email, setEmail] = useState('');
        //    const [password, setPassword] = useState('');
