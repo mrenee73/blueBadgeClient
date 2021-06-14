@@ -1,20 +1,20 @@
-h1{
+/* h1{
     text-align: center;
-}
-form{
+} */
+ .Form{
     position: absolute;
-    top: 40%;
+     top: 40%;
     left: 60%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
     border-style: solid;
-    border-color: black;
+    border-color: rgb(221, 8, 8);
     background-color: rgba(240, 244, 252, 0.548);
     margin-right: 50%;
     height: 275px;
     width: 650px;
     
-}
-.registerform{
+} 
+/* .registerform{
     
     border: black;
     border-radius: 0;
@@ -24,8 +24,8 @@ form{
     /* background-color: rgb(153, 206, 250); */
 
 
-}
-.input{
+/* }  */
+/* .input{
     color:blueviolet;
     align-items: center;
     border: none ;
@@ -42,9 +42,9 @@ form{
     outline: none;
     background-color: grey;
     color: white;
-}
+} */
 
-.button{
+/* .button{
     margin-top: 1em;
     border: none;
     height: 50px;
@@ -56,4 +56,4 @@ form{
 
 .button:focus{
     outline: none;
-}
+} */
