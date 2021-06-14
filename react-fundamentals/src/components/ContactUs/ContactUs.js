@@ -33,7 +33,7 @@ const contactUs = (props) => {
 
     return(
         <div>
-            <h1>New Entry</h1>
+            <h1>Contact Us</h1>
                 <Form onSubmit={sendMessage}>
                     <FormGroup>
                         <Label htmlFor="nameOfForm">Name</Label>
