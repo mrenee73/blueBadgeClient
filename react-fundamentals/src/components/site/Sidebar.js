@@ -12,6 +12,7 @@ import signPic from '../../assets/neighborhoodsign.jpg';
 import CreateEntry from '../Entry/Entry'
 import ContactForm from '../ContactUs/ContactUs';
 import EntryIndex from '../Entry/EntryIndex';
+import CommunityIndex from '../Community/Community';
 
 
 
@@ -28,7 +29,7 @@ const Sidebar = (props) => {
                     <li><Link to ='/Register'>Register</Link></li> */}
                     <li><Button><Link to ='/'onClick={props.clearToken}>Log Out</Link></Button></li>
                     <br/>
-                    <li><Button><Link to ='/functionalcomponent'>View Community Posts</Link></Button></li>
+                    <li><Button><Link to ='/community'>View Community Posts</Link></Button></li>
                     <br/>
                     <li><Button><Link to ='/entry'>Create a New Post</Link></Button></li>
                     <br/>
@@ -43,6 +44,7 @@ const Sidebar = (props) => {
                     <Route exact path='/entry'><CreateEntry token ={props.token}/></Route>
                     <Route exact path='/contactus'><ContactForm /></Route>
                     <Route exact path='/entryindex'><EntryIndex token ={props.token}/></Route>
+                    <Route exact path='/community'><CommunityIndex /></Route>
                     {/* <Route exact path='/Login'><Login updateToken ={props.updateToken} /></Route>
                     <Route exact path='/Register'><Register /></Route>
                      */}
