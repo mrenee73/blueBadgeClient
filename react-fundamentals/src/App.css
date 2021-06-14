@@ -7,7 +7,7 @@ body {
 
 /* footer */
 footer {
-  background-color: #1C4878;
+  background-color: #1c3178;
   color: white;
   margin-top: 10px;
 }
@@ -21,6 +21,7 @@ footer p{
 /* main */
 
 .main {
+  display: flex;
   background: linear-gradient(to bottom, #014084 0%, #ffffff 100%);
   color: black;
   height: 100%;
@@ -32,6 +33,7 @@ footer p{
   width: 90%;
   padding: 5px;
 }
+
 
 .sidebar {
   display: flex;
@@ -68,8 +70,8 @@ ul {
 .header {
   margin-top: 0.5em!important;
   text-align: center;
-  background-color: #1C4878;
-  color: white;
+  background-color: #1c2a78;
+  color: rgb(255, 255, 255);
 
 }
 
@@ -84,6 +86,22 @@ ul {
 #couplePic {
   float: right;
 }
+.Login{
+  background-color: blueviolet;
+}
+/* .Form{
+  position: absolute;
+  /* top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%); */
+  /* border-style: solid;
+  border-color: rgb(104, 221, 8);
+  background-color: rgba(2, 8, 19, 0.548);
+  margin-right: 50%;
+  height: 275px;
+  width: 650px;
+  
+} */ 
 
 
 
