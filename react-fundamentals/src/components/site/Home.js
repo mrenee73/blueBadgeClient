@@ -15,7 +15,9 @@ const Home = (props) => {
     const title = () => {
         return login ? 'HOA Members Login' : 'HOA Members Register';
             }
-
+    const buttonText = () => {
+        return login ? 'Register as a Member!' : 'Member Login';
+            }
     const loginToggle = (event) => {
        
         event.preventDefault();
@@ -103,7 +105,7 @@ const Home = (props) => {
                 src={couplePic} 
                 alt="Couple Pic" ></img>
                 <br/>
-                <Button onClick={loginToggle}>Login/Signup Toggle</Button>
+                <Button onClick={loginToggle}>{buttonText()}</Button>
                 <br />
                 <br/>
                
