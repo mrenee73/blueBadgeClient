@@ -21,6 +21,7 @@ footer p{
 /* main */
 
 .main {
+  display: flex;
   background: linear-gradient(to bottom, #014084 0%, #ffffff 100%);
   color: black;
   height: 100%;
@@ -83,6 +84,13 @@ ul {
 
 #couplePic {
   float: right;
+}
+
+Form{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 

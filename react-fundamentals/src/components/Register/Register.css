@@ -3,9 +3,9 @@ h1{
 }
 form{
     position: absolute;
-    top: 40%;
+    /* top: 40%;
     left: 60%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     border-style: solid;
     border-color: black;
     background-color: rgba(240, 244, 252, 0.548);
