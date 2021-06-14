@@ -7,11 +7,11 @@ import Home from './components/site/Home'
 
 import Footer from './components/site/Footer';
 import Header from './components/site/Header';
-import Sidebar from './components/site/Sidebar';
+// import Sidebar from './components/site/Sidebar';
 
-import {
-  BrowserRouter as Router 
-  } from 'react-router-dom';
+// import {
+//   BrowserRouter as Router 
+//   } from 'react-router-dom';
 
 function App() {
   const [sessionToken, setSessionToken] = useState('');
@@ -34,7 +34,7 @@ const clearToken = () => {
 }
   
   const protectedViews = () => {
-    return (sessionToken === localStorage.getItem('token') ? <LandingPage token ={sessionToken}/>
+    return (sessionToken === localStorage.getItem('token') ? <LandingPage updateToken ={updateToken} token ={sessionToken} clearToken={clearToken}/>
     : <Home updateToken ={updateToken}/>)
   }
   return (
