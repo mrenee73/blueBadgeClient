@@ -26,26 +26,22 @@ const Register = (props) => {
     }).catch(err => console.log(err));
 };
 return(
-<div>
+  <div>
   <h1>HOA Members Register</h1>
             <form onSubmit={submitAction}>
                 <div class='registerform'>
                     <label htmlFor="email">Email</label>
-                    <input name="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
-                </div>                
-                <div class='registerform'>
+                    <input name="email" value={email} onChange={(e) => setEmail(e.target.value)}/>                               
+                
                     <label htmlFor="password">Password</label>
-                    <input name="password" value = {password} onChange={(e) => setPassword(e.target.value)}/>
-                </div>
-                <div class='registerform'>
+                    <input name="password" value = {password} onChange={(e) => setPassword(e.target.value)}/>                
+                
                     <label htmlFor="firstName">First Name</label>
-                    <input name="firstName" value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
-                </div>
-                <div class='registerform'>
-                    <label htmlFor="lastName">Last Name</label>
+                    <input name="firstName" value={firstName} onChange={(e) => setFirstName(e.target.value)}/>                
+                <label htmlFor="lastName">Last Name</label>
                     <input name="lastName" value = {lastName} onChange={(e) => setLastName(e.target.value)}/>
-                </div>
-                <div class='registerform'>
+                
+                
                     <label htmlFor="street">Street Address</label>
                     <input name="street" value = {street} onChange={(e) => setStreet(e.target.value)}/>
                 </div>
