@@ -1,4 +1,4 @@
-.input{
+/* .input{
     border: 4px;
     border-radius: 5px;
     background-color: lightgray;
@@ -14,9 +14,9 @@
     outline: none;
     background-color: grey;
     color: white;
-}
+} */
 
-.button{
+/* .button{
     margin-top: 1em;
     border: none;
     height: 50px;
@@ -28,5 +28,5 @@
 
 .button:focus{
     outline: none;
-}
+} */
 
