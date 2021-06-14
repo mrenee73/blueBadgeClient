@@ -1,8 +1,9 @@
 
        import React, {useState}from 'react';
+       import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
        import './UserLandingPage.css';
        
-       const LandingPage = (props) => {
+       const logCreate = (props) => {
 
         return(
             <div>
