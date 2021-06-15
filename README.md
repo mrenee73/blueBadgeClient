@@ -25,4 +25,4 @@ This is a website that allows residents of the neighborhood can submit complaint
 
 ## Screenshots:
 
-![HOA Website ](https://files.slack.com/files-pri/T01U94VCETS-F025SSMKY3A/contact.png)
+![HOA Website ](contact.png)
