@@ -3,31 +3,36 @@ import {Form, FormGroup, Label, Input, Button} from 'reactstrap';
 import './EntryUpdate.css'
 
 
-const updateEntry = (props) => {
-    const[editTitleOfEntry, setEditTitleOfEntry] = useState('');
-    const[editContentOfEntry, setEditContentOfEntry] = useState('');
-    const[editCategoryOfEntry, setEditCategoryOfEntry] = useState('');
-    const[editStatusOfEntry, setEditStatusOfEntry] = useState('');
-    const[editDateOfEntry, setEditDateOfEntry] = useState('');
-    
+const UpdateEntry = (props) => {
+    const[editTitleOfEntry, setEditTitleOfEntry] = useState(props.entryToUpdate.title);
+    const[editContentOfEntry, setEditContentOfEntry] = useState(props.entryToUpdate.description);
+    const[editCategoryOfEntry, setEditCategoryOfEntry] = useState(props.entryToUpdate.category);
+    const[editStatusOfEntry, setEditStatusOfEntry] = useState(props.entryToUpdate.status);
+    const[editDateOfEntry, setEditDateOfEntry] = useState(props.entryToUpdate.date);
+
+    console.log(props.entryToUpdate);
     const editEntry = e => {
         e.preventDefault();
 
-        let url = 'http://localhost:4000/entry/';
+        // let url = 'http://localhost:4000/log/';
 
-        fetch(url, {
-            method: 'POST',
+        fetch(`http://localhost:4000/log/update/${props.entryToUpdate.id}`, {
+            method: 'PUT',
             body: JSON.stringify({log:{title: editTitleOfEntry, description: editContentOfEntry,category:editCategoryOfEntry,status:editStatusOfEntry,date:editDateOfEntry}}),
             headers: new Headers({
                 'Content-Type' : 'application/json',
-                'Authorization': props.sessionToken
+                'Authorization': props.token
             })
         })
         .then((response) => response.json())
         .then((result) =>{
         console.log(result);
-        props.updateToken(result.sessionToken);
-    }).catch(err => console.log(err));
+        // props.updateToken(result.sessionToken);
+        
+    }).then(() => props.fetchEntries())
+    .then(()=> props.updateOff())
+    
+    .catch(err => console.log(err));
 
     }
 
@@ -37,15 +42,15 @@ const updateEntry = (props) => {
                 <Form onSubmit={editEntry}>
                     <FormGroup>
                         <Label htmlFor="editTitleOfEntry">Title</Label>
-                        <Input name="editTitleOfEntry" value={title} onChange={(e) => setEditTitleOfEntry(e.target.value)}/>
+                        <Input name="editTitleOfEntry" value={editTitleOfEntry} onChange={(e) => setEditTitleOfEntry(e.target.value)}/>
                     </FormGroup>
                     <FormGroup>
                         <Label htmlFor="editDateOfEntry">Date</Label>
-                        <Input Type= "date" name="editDateOfEntry" value={date} onChange={(e) => setEditDateOfEntry(e.target.value)}/>
+                        <Input Type= "date" name="editDateOfEntry" value={editDateOfEntry} onChange={(e) => setEditDateOfEntry(e.target.value)}/>
                     </FormGroup>
                     <FormGroup>
                         <Label htmlFor="editStatusOfEntry">Status:</Label>
-                        <Input type="select" name="editStatusOfEntry" value={status} onChange={(e) => setEditStatusOfEntry(e.target.value)}>
+                        <Input type="select" name="editStatusOfEntry" value={editStatusOfEntry} onChange={(e) => setEditStatusOfEntry(e.target.value)}>
                         <option></option>
                         <option value = "Pending">Pending</option>
                         <option value = "Resolved">Resolved</option>
@@ -54,7 +59,7 @@ const updateEntry = (props) => {
                     </FormGroup>
                     <FormGroup>
                         <Label htmlFor="editCategoryOfEntry">Category:</Label>
-                        <Input type="select" name="editCategoryOfEntry" value={category} onChange={(e) => setEditCategoryOfEntry(e.target.value)}>
+                        <Input type="select" name="editCategoryOfEntry" value={editCategoryOfEntry} onChange={(e) => setEditCategoryOfEntry(e.target.value)}>
                         <option></option>
                         <option value = "General">General</option>
                         <option value = "Neighborhood Happy">Neighborhood Happy</option>
@@ -64,7 +69,7 @@ const updateEntry = (props) => {
                     </FormGroup>
                     <FormGroup>
                         <Label htmlFor="editContentOfEntry">Content</Label>
-                        <Input name="editContentOfEntry" value = {description} onChange={(e) => setEditContentOfEntry(e.target.value)}/>
+                        <Input name="editContentOfEntry" value = {editContentOfEntry} onChange={(e) => setEditContentOfEntry(e.target.value)}/>
                     </FormGroup>
                     <Button type="submit">Post</Button>
                 </Form>
@@ -73,4 +78,4 @@ const updateEntry = (props) => {
     
 }
 
-export default updateEntry;
+export default UpdateEntry;

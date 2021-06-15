@@ -2,21 +2,35 @@ h1{
 
     text-align: center;
 }
-.Form{
+.form{
     position: absolute;
     top: 40%;
     left: 60%;
     transform: translate(-50%, -50%);
     border-style: solid;
     border-color: rgb(0, 0, 0);
+    background-color: rgba(27, 95, 61, 0.548);
+    margin-right: 50%;
+    height: 275px;
+    width: 500px;
+    
+}
+/* .stupidform{
+    position: absolute;
+     top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%); 
+    border-style: solid;
+    border-color: rgb(240, 33, 33);
     background-color: rgba(240, 244, 252, 0.548);
     margin-right: 50%;
     height: 275px;
     width: 650px;
     
-}
+}   */
 
-.registerform{
+
+/* .registerform{
     
     border: black;
     border-radius: 0;
@@ -26,7 +40,7 @@ h1{
     /* background-color: rgb(153, 206, 250); */
 
 
-}
+/* } */ 
 .input{
     color:blueviolet;
     align-items: center;
