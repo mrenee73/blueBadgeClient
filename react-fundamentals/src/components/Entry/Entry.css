@@ -29,3 +29,7 @@ button{
 button:focus{
     outline: none;
 }
+
+table{
+    background-color: rgb(78, 132, 150)
+}
