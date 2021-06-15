@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Form, FormGroup, Label, Input, Button} from 'reactstrap';
-import './EntryUpdate.css'
+
 
 
 const UpdateEntry = (props) => {
@@ -14,7 +14,6 @@ const UpdateEntry = (props) => {
     const editEntry = e => {
         e.preventDefault();
 
-       
 
         fetch(`http://localhost:4000/log/update/${props.entryToUpdate.id}`, {
             method: 'PUT',
@@ -27,7 +26,6 @@ const UpdateEntry = (props) => {
         .then((response) => response.json())
         .then((result) =>{
         console.log(result);
-       
         
     }).then(() => props.fetchEntries())
     .then(()=> props.updateOff())

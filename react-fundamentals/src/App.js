@@ -4,14 +4,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import LandingPage  from './components/UserLandingPage/UserLandingPage';
 import Home from './components/site/Home'
-
 import Footer from './components/site/Footer';
 import Header from './components/site/Header';
-// import Sidebar from './components/site/Sidebar';
 
-// import {
-//   BrowserRouter as Router 
-//   } from 'react-router-dom';
 
 function App() {
   const [sessionToken, setSessionToken] = useState('');
@@ -41,9 +36,7 @@ const clearToken = () => {
 
     <div className="App">
       <Header />
-      
-      
-        
+
         {protectedViews()}
      
       <Footer/>

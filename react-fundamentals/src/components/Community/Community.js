@@ -9,8 +9,7 @@ const CommunityIndex = () => {
     fetch('http://localhost:4000/log/userInfo/',{
         method: 'GET',
         headers: new Headers ({
-            'Content-Type' : 'application/json',
-           
+            'Content-Type' : 'application/json',           
         })
     }) .then ((res) => res.json())
     .then ((logData) => {

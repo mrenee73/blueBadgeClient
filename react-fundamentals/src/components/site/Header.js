@@ -3,7 +3,6 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-   
 } from 'reactstrap';
 import signPic from '../../assets/neighborhoodsign.jpg';
 

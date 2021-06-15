@@ -1,8 +1,7 @@
 import React, {useState}from 'react';
-import {Form, FormGroup, Label, Input, Button, Container} from 'reactstrap';
-import {Link} from 'react-router-dom';
+import {Form, FormGroup, Label, Input, Button} from 'reactstrap';
 import couplePic from '../../assets/coupleWalking.jpg'
-import './Home.css'
+
 
 const Home = (props) => {
     const [firstName, setFirstName] = useState('');
@@ -108,7 +107,6 @@ const Home = (props) => {
                 <Button onClick={loginToggle}>{buttonText()}</Button>
                 <br />
                 <br/>
-               
                 <div className="position-relative">
                 
                     
@@ -127,12 +125,6 @@ const Home = (props) => {
                             <Button type="submit" onClick={handleSubmit}>Submit</Button>
                 </Form>
                 </div>
-                
-                
-
-
-
-                
             </div>
         </div>
     );

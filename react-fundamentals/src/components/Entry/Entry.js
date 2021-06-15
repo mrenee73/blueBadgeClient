@@ -31,7 +31,6 @@ const CreateEntry = (props) => {
             setStatusOfEntry('');
             setCategoryOfEntry('');
             setContentOfEntry('');
-        // props.updateToken(result.token);
     }).catch(err => console.log(err));
 
     }

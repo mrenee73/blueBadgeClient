@@ -1,6 +1,5 @@
 
-    import React, {useState}from 'react';
-   
+    import React from 'react';
     import './UserLandingPage.css';
     import Sidebar from '../site/Sidebar';
     import {
@@ -8,8 +7,6 @@
         } from 'react-router-dom';
     
 
-//     const logCreate = (props) => {
-// }; 
     const LandingPage = (props) => {
         console.log(props.token);
  
