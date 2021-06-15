@@ -1,7 +1,7 @@
 import React, {useState}from 'react';
 import {Form, FormGroup, Label, Input, Button} from 'reactstrap';
 import couplePic from '../../assets/coupleWalking.jpg'
-
+import APIURL from '../../helpers/environment';
 
 const Home = (props) => {
     const [firstName, setFirstName] = useState('');
@@ -44,7 +44,7 @@ const Home = (props) => {
             street: street,
         }
 
-        let url = login ? 'http://localhost:4000/user/login' : 'http://localhost:4000/user/register';
+        let url = login ? `${APIURL}/user/login` : `${APIURL}/user/register`;
 
         fetch(url,{
             method: 'POST',

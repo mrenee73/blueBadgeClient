@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Form, FormGroup, Label, Input, Button} from 'reactstrap';
-
+import APIURL from '../../helpers/environment';
 
 
 const UpdateEntry = (props) => {
@@ -15,7 +15,7 @@ const UpdateEntry = (props) => {
         e.preventDefault();
 
 
-        fetch(`http://localhost:4000/log/update/${props.entryToUpdate.id}`, {
+        fetch(`${APIURL}/log/update/${props.entryToUpdate.id}`, {
             method: 'PUT',
             body: JSON.stringify({log:{title: editTitleOfEntry, description: editContentOfEntry,category:editCategoryOfEntry,status:editStatusOfEntry,date:editDateOfEntry}}),
             headers: new Headers({

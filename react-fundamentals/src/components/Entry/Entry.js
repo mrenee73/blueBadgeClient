@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Form, FormGroup, Label, Input, Button} from 'reactstrap';
 import './Entry.css'
-
+import APIURL from '../../helpers/environment';
 
 const CreateEntry = (props) => {
     const[titleOfEntry, setTitleOfEntry] = useState('');
@@ -13,7 +13,7 @@ const CreateEntry = (props) => {
     const postEntry = e => {
         e.preventDefault();
 
-        let url = 'http://localhost:4000/log/';
+        let url = `${APIURL}/log/`;
         console.log(e);
         fetch(url, {
             method: 'POST',

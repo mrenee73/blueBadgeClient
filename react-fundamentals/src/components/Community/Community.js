@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import {Table} from 'reactstrap';
-
+import APIURL from '../../helpers/environment';
 
 const CommunityIndex = () => {
     const [community, setCommunity] = useState([])
 
     const fetchCommunityEntries = () => {
-    fetch('http://localhost:4000/log/userInfo/',{
+    fetch(`${APIURL}/log/userInfo/`,{
         method: 'GET',
         headers: new Headers ({
             'Content-Type' : 'application/json',           

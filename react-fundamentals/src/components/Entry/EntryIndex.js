@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Container, Row, Col} from 'reactstrap';
+import APIURL from '../../helpers/environment';
 
 import EntryTable from './EntryTable';
 import UpdateEntry from './EntryUpdate';
@@ -10,7 +11,7 @@ const EntryIndex = (props) => {
     const [entryToUpdate, setEntryToUpdate] = useState({});
 
     const fetchEntries = () => {
-        fetch('http://localhost:4000/log/mine/',{
+        fetch(`${APIURL}/log/mine/`,{
             method: 'GET',
             headers: new Headers ({
                 'Content-Type' : 'application/json',
