@@ -1,5 +1,7 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import './ContactUs.css'
+
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("mwkabbzj");
@@ -7,7 +9,8 @@ function ContactForm() {
       return <h1>Thanks for reaching out! We will contact you soon!</h1>;
   }
   return (
-      <form onSubmit={handleSubmit}>
+<div >
+      <form className= 'contactBox' onSubmit={handleSubmit}>
       <label htmlFor="email">
         Email Address
       </label>
@@ -34,6 +37,9 @@ function ContactForm() {
         Submit
       </button>
     </form>
+
+    </div>
+
   );
 }
 

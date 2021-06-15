@@ -24,8 +24,8 @@ const EntryTable = (props) => {
                     <td>{entry.status}</td>
                     <td>{entry.description}</td>
                     <td>
-                        <Button color = "warning" onClick={() => {props.editUpdateEntry(entry); props.updateOn()}}>Update</Button>
-                        <Button color = "danger" onClick={() => {deleteEntry(entry)}}>Delete</Button>
+                        <Button  onClick={() => {props.editUpdateEntry(entry); props.updateOn()}}>Update</Button>
+                        <Button  onClick={() => {deleteEntry(entry)}}>Delete</Button>
                     </td>
                 </tr>
             )

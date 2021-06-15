@@ -9,10 +9,10 @@
     border-width: 1px;
     align-items: center;
     
-    background-color: rgb(153, 206, 250); */
+    background-color: rgb(153, 206, 250); 
 
 
-/* }  */
+    } 
 /* .input{
     color:blueviolet;
     align-items: center;
@@ -42,6 +42,3 @@
     cursor: pointer;
 }
 
-.button:focus{
-    outline: none;
-} */
