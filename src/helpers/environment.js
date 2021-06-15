@@ -9,7 +9,7 @@ switch (window.location.hostname) {
 
     case 'kcs-hoa-client.herokuapp.com':
 
-        APIURL='https://kcs-hoa-client.herokuapp.com'
+        APIURL='https://kcs-hoa-server.herokuapp.com'
 
 }
 
