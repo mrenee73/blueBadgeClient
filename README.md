@@ -27,11 +27,11 @@ Deploying the app to Heroku was very challenging. We were unable to retrieve the
 
 ## Screenshots:
 
-![Login Page](image/Loginpage.png)
+![Login Page](image/loginpage.png)
 
-![Create New Entry](image/NewEntry.png)
+![Create New Entry](image/newentry.png)
 
-![Update Your Post](image/Updateposts.png)
+![Update Your Post](image/updateposts.png)
 
 ![View All Post](image/commposts.png)
 
