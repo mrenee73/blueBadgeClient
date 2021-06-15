@@ -1,0 +1,49 @@
+h1{
+
+    text-align: center;
+}
+.form{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: rgba(27, 95, 61, 0.548);
+    margin-right: 50%;
+    height: 275px;
+    width: 500px;
+    
+}
+
+.input{
+    color:blueviolet;
+    align-items: center;
+    border: none ;
+    border-radius: 5px;
+    background-color: lightgray;
+    text-indent: 5px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 18px;
+}
+
+.input:focus{
+    align-content: center;
+    outline: none;
+    background-color: grey;
+    color: white;
+}
+.button{
+    margin-top: 1em;
+    border: none;
+    height: 50px;
+    width: 200px;
+    background-color: lightslategray;
+    color: white;
+    cursor: pointer;
+}
+
+.button:focus{
+    outline: none;
+}
