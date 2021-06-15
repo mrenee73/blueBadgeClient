@@ -1,6 +1,6 @@
 
     import React, {useState}from 'react';
-    import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+   
     import './UserLandingPage.css';
     import Sidebar from '../site/Sidebar';
     import {
@@ -8,8 +8,8 @@
         } from 'react-router-dom';
     
 
-    const logCreate = (props) => {
-}; 
+//     const logCreate = (props) => {
+// }; 
     const LandingPage = (props) => {
         console.log(props.token);
  

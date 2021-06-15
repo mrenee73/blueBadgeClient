@@ -44,9 +44,7 @@ const EntryIndex = (props) => {
     <Container>
         
         <Row>
-            {/* <Col md="3">
-                <WorkoutCreate fetchWorkouts={fetchWorkouts} token={props.token} />
-            </Col> */}
+            
             <Col md="9">
                 <EntryTable entries={entries} editUpdateEntry={editUpdateEntry} updateOn={updateOn} fetchEntries={fetchEntries} token={props.token}/>
             </Col>

@@ -14,7 +14,7 @@ const UpdateEntry = (props) => {
     const editEntry = e => {
         e.preventDefault();
 
-        // let url = 'http://localhost:4000/log/';
+       
 
         fetch(`http://localhost:4000/log/update/${props.entryToUpdate.id}`, {
             method: 'PUT',
@@ -27,7 +27,7 @@ const UpdateEntry = (props) => {
         .then((response) => response.json())
         .then((result) =>{
         console.log(result);
-        // props.updateToken(result.sessionToken);
+       
         
     }).then(() => props.fetchEntries())
     .then(()=> props.updateOff())
