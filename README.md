@@ -21,8 +21,18 @@ This is a website that allows residents of the neighborhood can submit complaint
 @ VScode
 @ Programing languages (HTML,CSS, React.js)
 
-## Challenges:
+## Challenges: 
+
+Deploying the app to Heroku was very challenging. We were unable to retrieve the database. Then Heroku could'nt find our repo.
 
 ## Screenshots:
 
-![HOA Website ](contact.png)
+![Login Page](image/Loginpage.png)
+
+![Create New Entry](image/NewEntry.png)
+
+![Update Your Post](image/Updateposts.png)
+
+![View All Post](image/commposts.png)
+
+![Contact Us Page ](image/contact.png)
