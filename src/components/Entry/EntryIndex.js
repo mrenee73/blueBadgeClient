@@ -17,7 +17,7 @@ const EntryIndex = (props) => {
                 'Content-Type' : 'application/json',
                 'Authorization' : props.token
             })
-        }) .then ((res) => res.json())
+        }).then ((res) => res.json())
         .then ((logData) => {
             setEntries(logData);
             console.log(logData); 
@@ -42,6 +42,8 @@ const EntryIndex = (props) => {
     }
 
     return(
+        <div className= "main">
+            <div className= "mainDiv">
     <Container>
         
         <Row>
@@ -49,10 +51,14 @@ const EntryIndex = (props) => {
             <Col md="9">
                 <EntryTable entries={entries} editUpdateEntry={editUpdateEntry} updateOn={updateOn} fetchEntries={fetchEntries} token={props.token}/>
             </Col>
+            <Col md="9">
             {updateActive ? <UpdateEntry entryToUpdate={entryToUpdate} updateOff={updateOff} token={props.token} fetchEntries={fetchEntries}/> : <> </>}
+            </Col>
         </Row>
     </Container>
-    )
+        </div>
+        </div>
+     )
 }
 
 export default EntryIndex;

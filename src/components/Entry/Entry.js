@@ -36,8 +36,9 @@ const CreateEntry = (props) => {
     }
 
     return(
-        <div>
-            <h1>New Entry</h1>
+        <div className = "main">
+            <div className = "mainDiv">
+            <h1 className= "whiteHeading">New Entry</h1>
                 <Form onSubmit={postEntry}>
                     <FormGroup>
                         <Label htmlFor="titleOfEntry">Title</Label>
@@ -72,6 +73,7 @@ const CreateEntry = (props) => {
                     </FormGroup>
                     <Button type="submit">Post</Button>
                 </Form>
+        </div>
         </div>
     )
     

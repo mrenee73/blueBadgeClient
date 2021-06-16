@@ -1,7 +1,8 @@
 import React, {useState}from 'react';
-import {Form, FormGroup, Label, Input, Button} from 'reactstrap';
+import {Form, FormGroup, Label, Input, Button, Container} from 'reactstrap';
 import couplePic from '../../assets/coupleWalking.jpg'
 import APIURL from '../../helpers/environment';
+
 
 const Home = (props) => {
     const [firstName, setFirstName] = useState('');
@@ -10,7 +11,7 @@ const Home = (props) => {
     const [password, setPassword]  = useState('');
     const [street, setStreet] = useState(''); 
     const [login, setLogin] = useState(true);
-
+    
     const title = () => {
         return login ? 'HOA Members Login' : 'HOA Members Register';
             }
@@ -18,7 +19,6 @@ const Home = (props) => {
         return login ? 'Register as a Member!' : 'Member Login';
             }
     const loginToggle = (event) => {
-       
         event.preventDefault();
         
         setLogin(!login);
@@ -89,16 +89,17 @@ const Home = (props) => {
             
         </div>
     ) : null;
-
+    
+    
 
 
     return(
         <div className= 'main'>
             <div className= 'mainDiv'>
                 
-                <h1> Welcome to our Community!</h1>
-
-                <h4>Welcome to our community web site. Once you register you can log in and post about things happening in the neighborhood as well as find out what is happening to your fellow neighbors. </h4>
+                <h1 className= "whiteHeading"> Welcome to our Community!</h1>
+                <br/>
+                <h4 className= "whiteHeading">Welcome to our community web site. Once you register you can log in and post about things happening in the neighborhood as well as find out what is happening with your fellow neighbors. </h4>
 
                 <img id="couplePic" 
                 src={couplePic} 
@@ -108,22 +109,29 @@ const Home = (props) => {
                 <br />
                 <br/>
                 <div className="position-relative">
-                
-                    
+                <Container>
+                <h1>{title()}</h1>  
                 <Form>
-                <h1>{title()}</h1>
-                {signupFields()}
+                    {signupFields()}
                 <FormGroup>
                     <Label htmlFor="email">Email</Label>
                     <Input name="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
                 </FormGroup>
+                
                 <FormGroup>
                     <Label htmlFor="password">Password</Label>
-                    <Input name="password" value = {password} onChange={(e) => setPassword(e.target.value)}/>
+                    <Input type= "password" name="password" value = {password} 
+                    onChange={(e) => setPassword(e.target.value)}
+                    
+                    />
+                    
+      
                 </FormGroup>
-                            
-                            <Button type="submit" onClick={handleSubmit}>Submit</Button>
+                         {(password.length >= 5) ? <Button type="submit" onClick={handleSubmit}>Submit</Button> :null}
+                        
+                        
                 </Form>
+                </Container>
                 </div>
             </div>
         </div>

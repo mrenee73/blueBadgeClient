@@ -11,7 +11,7 @@ const CommunityIndex = () => {
         headers: new Headers ({
             'Content-Type' : 'application/json',           
         })
-    }) .then ((res) => res.json())
+    }).then ((res) => res.json())
     .then ((logData) => {
         setCommunity(logData.posts);
         console.log(logData); 
@@ -27,11 +27,12 @@ useEffect(() => {
 
 const communityMapper = () => {
     return community.map((posts,index) => {
+        let date = new Date(posts.date).toLocaleDateString("en-US")
         return(
             <tr key={index}>
-                <th scope="row">`{posts.user.firstName} {posts.user.lastName}</th>
+                <th scope="row">{posts.user.firstName} {posts.user.lastName}</th>
                 <td>{posts.title}</td>
-                <td>{posts.date}</td>
+                <td>{date}</td>
                 <td>{posts.category}</td>
                 <td>{posts.status}</td>
                 <td>{posts.description}</td>
@@ -41,9 +42,11 @@ const communityMapper = () => {
 };
 
 return(
-    <>
-    <h3>What Your Neighbors Are Saying</h3>
+    <div className = "main">
+        <div className = "mainDiv">
+    <h1 className= "whiteHeading">What Your Neighbors Are Saying</h1>
     <hr/>
+    
     <Table striped>
         <thead>
             <tr>
@@ -60,7 +63,8 @@ return(
             {communityMapper()}
         </tbody>
     </Table>
-    </>
+    </div>
+    </div>
 )
 }
 

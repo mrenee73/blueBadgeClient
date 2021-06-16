@@ -9,13 +9,14 @@
 
     const LandingPage = (props) => {
         console.log(props.token);
- 
         return(
-            <div>
-                <Router>
+            
+                
+                <Router >
                 <Sidebar updateToken ={props.updateToken} token ={props.token} clearToken={props.clearToken}/>
                 </Router>
-            </div>
+            
+          
         )
 };
  

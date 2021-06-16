@@ -16,11 +16,12 @@ const EntryTable = (props) => {
 
     const entryMapper = () => {
         return props.entries.map((entry,index) =>{
+            let date = new Date(entry.date).toLocaleDateString("en-US")
             return(
                 <tr key={index}>
                     <th scope="row">{entry.id}</th>
                     <td>{entry.title}</td>
-                    <td>{entry.date}</td>
+                    <td>{date}</td>
                     <td>{entry.category}</td>
                     <td>{entry.status}</td>
                     <td>{entry.description}</td>
@@ -35,7 +36,7 @@ const EntryTable = (props) => {
 
     return(
         <>
-        <h3> Post History</h3>
+        <h1 className= "whiteHeading"> Post History</h1>
         <hr/>
         <Table striped>
             <thead>

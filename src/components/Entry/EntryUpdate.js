@@ -8,7 +8,9 @@ const UpdateEntry = (props) => {
     const[editContentOfEntry, setEditContentOfEntry] = useState(props.entryToUpdate.description);
     const[editCategoryOfEntry, setEditCategoryOfEntry] = useState(props.entryToUpdate.category);
     const[editStatusOfEntry, setEditStatusOfEntry] = useState(props.entryToUpdate.status);
-    const[editDateOfEntry, setEditDateOfEntry] = useState(props.entryToUpdate.date);
+    // const[editDateOfEntry, setEditDateOfEntry] = useState(date);
+
+    
 
     console.log(props.entryToUpdate);
     const editEntry = e => {
@@ -17,7 +19,7 @@ const UpdateEntry = (props) => {
 
         fetch(`${APIURL}/log/update/${props.entryToUpdate.id}`, {
             method: 'PUT',
-            body: JSON.stringify({log:{title: editTitleOfEntry, description: editContentOfEntry,category:editCategoryOfEntry,status:editStatusOfEntry,date:editDateOfEntry}}),
+            body: JSON.stringify({log:{title: editTitleOfEntry, description: editContentOfEntry,category:editCategoryOfEntry,status:editStatusOfEntry}}),
             headers: new Headers({
                 'Content-Type' : 'application/json',
                 'Authorization': props.token
@@ -42,10 +44,10 @@ const UpdateEntry = (props) => {
                         <Label htmlFor="editTitleOfEntry">Title</Label>
                         <Input name="editTitleOfEntry" value={editTitleOfEntry} onChange={(e) => setEditTitleOfEntry(e.target.value)}/>
                     </FormGroup>
-                    <FormGroup>
+                    {/* <FormGroup>
                         <Label htmlFor="editDateOfEntry">Date</Label>
                         <Input Type= "date" name="editDateOfEntry" value={editDateOfEntry} onChange={(e) => setEditDateOfEntry(e.target.value)}/>
-                    </FormGroup>
+                    </FormGroup> */}
                     <FormGroup>
                         <Label htmlFor="editStatusOfEntry">Status:</Label>
                         <Input type="select" name="editStatusOfEntry" value={editStatusOfEntry} onChange={(e) => setEditStatusOfEntry(e.target.value)}>

@@ -31,5 +31,6 @@ button:focus{
 }
 
 table{
-    background-color: rgb(78, 132, 150)
+    background-color: rgb(78, 132, 150);
+    max-width: 1200px;
 }

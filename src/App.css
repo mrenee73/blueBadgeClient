@@ -37,6 +37,7 @@ footer p{
 
 .sidebar {
   display: flex;
+  justify-content: center;
   background-color: #1C4878;
   margin-top: 10px;
 }
@@ -49,6 +50,7 @@ ul {
 
 .sidebar-list-styling{
   padding-left: 50px;
+  padding-right: 50px;
   padding-top: 15px;
   width: 20%;
   background-color: #1C4878;
@@ -82,12 +84,23 @@ ul {
 .header p {
   margin-top: 0.8em!important;
 }
+.pageTitle{
+  margin-left: 30px;
+}
 
 #couplePic {
+  margin-left: -30em;
   float: right;
 }
 .Login{
   background-color: blueviolet;
+}
+
+.whiteHeading{
+  color:  rgb(255, 255, 255);
+}
+h1{
+  text-align:center
 }
 
 

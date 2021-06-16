@@ -6,10 +6,11 @@ import './ContactUs.css'
 function ContactForm() {
   const [state, handleSubmit] = useForm("mwkabbzj");
   if (state.succeeded) {
-      return <h1>Thanks for reaching out! We will contact you soon!</h1>;
+      return <h1 className= "whiteHeading">Thanks for reaching out! We will contact you soon!</h1>;
   }
   return (
-<div >
+<div className="main" >
+  <div className= "mainDiv">
       <form className= 'contactBox' onSubmit={handleSubmit}>
       <label htmlFor="email">
         Email Address
@@ -37,7 +38,7 @@ function ContactForm() {
         Submit
       </button>
     </form>
-
+    </div>
     </div>
 
   );
