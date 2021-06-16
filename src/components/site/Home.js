@@ -127,7 +127,8 @@ const Home = (props) => {
                     
       
                 </FormGroup>
-                         {(password.length >= 5) ? <Button type="submit" onClick={handleSubmit}>Submit</Button> :null}
+                         
+                         <Button type="submit" disabled={(password.length >= 5 )? false : true} onClick={handleSubmit}>Submit</Button>
                         
                         
                 </Form>
